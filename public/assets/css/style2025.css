@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/******************************************
+基本設定
+*******************************************/
+html{
+    font-size:15px;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+body {
+    background-color: #DDD;
+}
+body,
+h1,h2,h3,h4,h5,h6,p,pre,blockquote,
+ul,ol,dl,
+th,td {
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 150%;
+    color: #555;
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6.p {
+     font-weight: normal;
+}
+p {
+     margin: 0;
+}
+ol, ul {
+    list-style: none;
+}
+fieldset,img {
+     border: 0;
+}
+caption,th {
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+     font-style: normal;
+}
+img    {
+vertical-align: bottom;
+}
+
+/* clearfix */
+.cf {
+    zoom: 1;
+}
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+
+a:link    {color: #5F63B0; text-decoration:none;}
+a:visited {color: #5F63B0; text-decoration:none;}
+a:hover   {color: #5e68e1; text-decoration:none; text-decoration:underline;}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+委任意思確認画面
+*******************************************/
+#form2025 {
+    margin: 20px auto;
+    padding: 50px 110px;
+    width: 95%;
+	max-width: 800px;
+    background-color: #FFF;
+    border: 5px solid #06C;
+}
+#form2025.ok {border-color: #39C;}
+#form2025.ng {border-color: #C66;}
+.headerLogo {
+	margin-bottom: 20px;
+	width: 400px;
+	height: auto;
+}
+#form2025 h1 {
+    margin-bottom: 1em;
+	padding: 2px;
+    font-size: 1.4rem;
+	color: white;
+    font-weight: bold;
+	text-align: center;
+	background-color: #06C;
+	border-radius: 6px;
+}
+.ok h1 {background-color: #39C !important;}
+.ng h1 {background-color: #C66 !important;}
+
+.infoArea {
+	margin-top: 1em;
+	min-height: 230px;
+}
+.msgArea {
+	min-height: 120px;
+}
+
+#form2025 p {
+	margin-bottom: 0.5em;
+    font-size: 1rem;
+}
+#form2025 p.notice {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	padding-left: 2em;
+	text-indent: -2em;
+    font-size: 0.95rem;
+}
+#form2025 p.result {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	font-size: 1.5rem;
+	font-weigjt: bold;
+	text-align: center;
+}
+#form2025 p.orgName {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.2em;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+}
+#form2025 p.orgAddress {
+	margin-bottom: 0.2em;
+	font-size: 0.9rem;
+	text-align: center;
+}
+#form2025 p.telNum {
+	font-size: 1.2rem;
+	text-align: center;
+}
+span.alart {
+	color: red;
+	font-weight: bold;
+}
+em {
+    color: #F00;
+}
+/* スマホのみ改行 */
+.br-sp {display: none; }
+
+#form2025 dl {
+    padding: 4px 0 4px 0px;
+    text-align: left;
+}
+#form2025 dl dt {
+    padding: 5px 0px 5px 0px;  
+    width: 9em;
+    float:left;  
+    font-weight: bold;  
+}  
+#form2025 dl dd {
+    margin-left: 9em;
+    padding: 5px 0 5px 0px;
+}  
+.textField {
+	margin-right: 3px;
+	margin-left: 3px;
+    padding: 3px 3px;
+    font-size: 16px; 
+    border:1px solid #AAA;
+}
+.w40per {width: 40%;}
+
+/* ポップアップメニュー */
+#form2025 dl select {
+    font-size: 1rem;
+	width: inherit;
+}
+
+select.alart {
+	border: 2px solid red;
+}
+input.alart {
+	border: 2px solid red;
+}
+
+/* ボタン */
+.form2025BtnArea {
+    padding-top: 20px;
+	margin-bottom: 20px;
+    border-top: 1px dotted #AAA;
+	text-align: center;
+}
+.formBtn {
+	margin: 0 0 10px 0;
+	padding: 6px 0;
+	width: 10em;
+	color: #333;
+	font-size: 1rem;
+	font-weight: bold;
+	border: 1px solid #AAA;
+	border-radius: 4px;
+	background-color: #F6F6F6;
+	background: linear-gradient(to bottom, #fff 20%, #eee 100%);
+}
+.formBtn:hover {
+	text-decoration: none;
+	color: #FF7800;
+}
+.btnSearch {
+	background: linear-gradient(to bottom, #fff 20%, #FEC 100%);
+}
+.btnBack {
+	background: linear-gradient(to bottom, #fff 20%, #CDE 100%);
+}
+

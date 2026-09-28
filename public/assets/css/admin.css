@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/******************************************
+会員データ管理画面
+*******************************************/
+#form2025.admin {
+	max-width: 1000px;
+	padding: 30px 40px;
+}
+.adminLogout {
+	margin-top: -0.5em;
+	text-align: right;
+}
+.adminSection {
+	margin: 1.5em 0;
+}
+#form2025 .adminSection h2 {
+	margin-bottom: 0.5em;
+	padding: 2px 0 2px 8px;
+	font-size: 1.15rem;
+	font-weight: bold;
+	border-left: 5px solid #06C;
+}
+#form2025 .adminSection h3 {
+	margin: 1em 0 0.4em;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.adminReport {
+	padding: 1em;
+	border: 2px solid #39C;
+	border-radius: 6px;
+}
+.adminReport-failed {
+	border-color: #C66;
+}
+.adminTable {
+	width: 100%;
+	margin: 0.5em 0;
+	font-size: 0.95rem;
+}
+.adminTable th,
+.adminTable td {
+	padding: 4px 8px;
+	vertical-align: top;
+	border: 1px solid #ccc;
+	overflow-wrap: anywhere;
+}
+.adminTable th {
+	font-weight: bold;
+	text-align: left;
+	background: #f2f6fa;
+}
+.adminKV th {
+	width: 11em;
+}
+.adminErrors th:first-child,
+.adminErrors td:first-child {
+	width: 5em;
+	text-align: right;
+}
+.adminNum {
+	text-align: right;
+}
+.adminHash {
+	font-family: monospace;
+	font-size: 0.85rem;
+}
+#form2025 .adminMsg,
+#form2025 .adminMsg p {
+	margin: 0.5em 0;
+}
+.adminMsg {
+	padding: 0.6em 0.8em;
+	border-radius: 4px;
+}
+.adminMsgError {
+	color: #900;
+	font-weight: bold;
+	background: #fdeeee;
+	border: 1px solid #e3a3a3;
+}
+.adminMsgWarning {
+	color: #6b4a00;
+	background: #fff6dc;
+	border: 1px solid #e8cf85;
+}
+.adminMsgWarning ul {
+	max-height: 16em;
+	padding-left: 1.5em;
+	overflow: auto;
+	list-style: disc;
+	font-size: 0.9rem;
+}
+.adminList {
+	margin: 0.5em 0 0.5em 1.5em;
+	list-style: disc;
+}
+.adminList li {
+	margin-bottom: 0.3em;
+}
+.adminCheck {
+	display: block;
+}
+.adminCode {
+	margin: 0.3em 0 1em;
+	padding: 0.5em 1em;
+	font-family: monospace;
+	background: #f6f6f6;
+	border: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 769px) {
+	#form2025.admin {
+		padding: 20px 3%;
+	}
+	.adminKV th {
+		width: 7em;
+	}
+}

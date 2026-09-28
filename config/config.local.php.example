@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * サーバーごとの設定（config.local.php にコピーして使います）
+ *
+ *   cp config/config.local.php.example config/config.local.php
+ *
+ * ここに書いた項目だけが config.php の既定値を上書きします。
+ * config.local.php は Git の管理対象外です。
+ */
+
+return [
+    'admin' => [
+        // php bin/hash-password.php で作ったハッシュを貼り付けます
+        'password_hash' => '',
+    ],
+
+    // 例: 「会員番号入力に戻る」の戻り先を変える
+    // 'site' => [
+    //     'back_to_input_url' => 'https://example.com/form',
+    // ],
+
+    // 例: 問い合わせ先の電話番号を変える（配列は丸ごと置き換わります）
+    // 'contact' => [
+    //     'tel' => ['03-0000-0000'],
+    // ],
+];

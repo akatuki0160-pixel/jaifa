@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/******************************************
+元画面のCSS（style2025.css ほか）への追加分
+*******************************************/
+
+/* リンクを元画面の input ボタンと同じ見た目にする */
+a.formBtn,
+a.formBtn:link,
+a.formBtn:visited {
+	display: inline-block;
+	color: #333;
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+a.formBtn:hover {
+	color: #FF7800;
+	text-decoration: none;
+}
+
+/* 検索結果（該当あり）: 会員番号と入力内容の間を詰める */
+#form2025.ok .msgArea {
+	min-height: 0;
+	margin-bottom: 1em;
+}
+#form2025.ok p.notice {
+	margin-top: 1em;
+}
+
+/* 検索結果の会員番号 */
+#form2025 p.result .memberNo {
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #333;
+}
+
+/* エラー詳細（config の debug が true のときだけ表示） */
+.debugDetail {
+	margin-top: 1em;
+	padding: 1em;
+	overflow: auto;
+	font-size: 12px;
+	line-height: 1.4;
+	white-space: pre-wrap;
+	background: #f6f6f6;
+	border: 1px solid #ccc;
+}

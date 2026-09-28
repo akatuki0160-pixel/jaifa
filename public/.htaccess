@@ -1,0 +1,12 @@
+# ドットで始まるファイル（.user.ini 等）は公開しない
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule (^|/)\. - [F]
+</IfModule>
+
+# Apache の mod_php で動かす場合のアップロード上限（4万件のCSVは数MBになります）。
+# PHP-FPM / CGI で動かす場合は同じフォルダの .user.ini が使われます。
+<IfModule mod_php.c>
+    php_value upload_max_filesize 32M
+    php_value post_max_size 40M
+</IfModule>

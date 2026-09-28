@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/******************************************
+*******************************************
+全ページ共通
+*******************************************
+*******************************************/
+
+/******************************************
+委任意思確認画面
+*******************************************/
+#form2025 {
+    margin: 10px 2%;
+	padding: 20px 2%;
+	width: 96%;
+}
+.headerLogo {
+    margin: 10px auto;
+	width: 100%;
+	max-width: 370px;
+	text-align: center;
+}
+#form2025 h1 {
+    margin-bottom: 0.5em;
+}
+#form2025 p.orgName {
+	max-width: 20em;
+	font-size: 1rem;
+	text-align: left;
+}
+
+#form2025 dl dt {
+    width: 7em;
+}  
+#form2025 dl dd {
+    margin-left: 7em;
+}  
+
+/* スマホのみ改行 */
+.br-sp {display: block; }
+
+.w40per {width: 60%;}
+
+/* ポップアップメニュー */
+#form2025 dl select {
+	width: 100%;
+}

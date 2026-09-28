@@ -1,0 +1,13 @@
+# このフォルダ全体を公開ディレクトリ（例: public_html/script/qryno/）に置く場合の設定です。
+# すべてのアクセスを public/ に振り分けるため、URL は元システムと同じ
+#   https://（ドメイン）/script/qryno/qryNo.php
+# のままで使え、設定ファイルや会員データ（data/）にはアクセスできません。
+# ドキュメントルートを public/ に向けられるサーバーでは、このファイルは使われません。
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # ドットで始まるファイル・フォルダ（.git、.user.ini 等）は公開しない
+    RewriteRule (^|/)\. - [F]
+    RewriteRule ^$ public/ [L]
+    RewriteRule ^((?!public/).*)$ public/$1 [L]
+</IfModule>

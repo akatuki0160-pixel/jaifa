@@ -1,0 +1,12 @@
+# サーバーごとの設定（管理者パスワードのハッシュ等）
+/config/config.local.php
+
+# 取込済みの会員データ・実行時ファイル
+/data/*
+!/data/.htaccess
+
+# 動作確認用に生成した大きなダミーCSV
+/sample/members_dummy*.csv
+
+.DS_Store
+Thumbs.db
